@@ -255,7 +255,7 @@ class Particle {
 // -------------------------------------------------Main Logic Here -------------------------------------------
 
 // Creating Player Object, Weapons Array, Enemy Array, Etc Array
-const abhi = new Player(playerPosition.x, playerPosition.y, 15, "white");
+const anubhav = new Player(playerPosition.x, playerPosition.y, 15, "white");
 const weapons = [];
 const hugeWeapons = [];
 const enemies = [];
@@ -318,7 +318,7 @@ function animation() {
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   // Drawing Player
-  abhi.draw();
+  anubhav.draw();
 
   // Generating Particles
   particles.forEach((particle, particleIndex) => {
@@ -358,12 +358,12 @@ function animation() {
 
     // Finding Distance between player and enemy
     const distanceBetweenPlayerAndEnemy = Math.hypot(
-      abhi.x - enemy.x,
-      abhi.y - enemy.y
+      anubhav.x - enemy.x,
+      anubhav.y - enemy.y
     );
 
     // Stoping Game if enemy hit player
-    if (distanceBetweenPlayerAndEnemy - abhi.radius - enemy.radius < 1) {
+    if (distanceBetweenPlayerAndEnemy - anubhav.radius - enemy.radius < 1) {
       cancelAnimationFrame(animationId);
       gameOverSound.play();
       hugeWeaponSound.pause();
