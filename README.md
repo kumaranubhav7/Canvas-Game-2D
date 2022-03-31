@@ -1,8 +1,7 @@
 ﻿# Welcome to CANVAS 2D SHOOTING
-
-Hi!  my first html canvas **game**, I have created this using vanilla JavaScript. 
+ 
+URL of the game is - https://kumaranubhav7.github.io/Canvas-Game-2D/
 You can see the **Controls** and **Rules** below
-
 
 # Rules
 
